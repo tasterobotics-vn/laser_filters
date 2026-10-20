@@ -12,5 +12,9 @@ scan_to_scan_filter_chain:
       name: angle_filter
       type: laser_filters/LaserScanAngularBoundsFilterInPlace
       params:
-        lower_angle: 0.78539816339     
-        upper_angle: -0.78539816339    
+        # Laser scan receive angle from 135 degree to -135 degree
+        #lower_angle: 0.78539816339     
+        #upper_angle: -0.78539816339
+        # Laser scan receive angle from 134 degree to -134 degree
+        lower_angle: 0.802851456  
+        upper_angle: -0.802851456      
