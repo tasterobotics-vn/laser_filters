@@ -1,14 +1,14 @@
 scan_to_scan_filter_chain:
   ros__parameters:
+    # filter1:
+    #   name: polygon_filter
+    #   type: laser_filters/LaserScanPolygonFilter
+    #   params:
+    #     polygon_frame: base_footprint
+    #     polygon: "[[1.0, 0.5], [-1.0, 0.5], [-1.0, -0.5], [1.0, -0.5]]"
+    #     invert: false
+    #     footprint_topic: base_footprint_exclude
     filter1:
-      name: polygon_filter
-      type: laser_filters/LaserScanPolygonFilter
-      params:
-        polygon_frame: base_footprint
-        polygon: "[[1.0, 0.5], [-1.0, 0.5], [-1.0, -0.5], [1.0, -0.5]]"
-        invert: false
-        footprint_topic: base_footprint_exclude
-    filter2:
       name: angle_filter
       type: laser_filters/LaserScanAngularBoundsFilterInPlace
       params:
